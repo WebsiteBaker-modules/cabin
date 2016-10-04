@@ -22,36 +22,36 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 --------------------------------------------------------------------------*/
 
 $month_name     = array();
-$month_name[1]  = "January";
-$month_name[2]  = "February";
-$month_name[3]  = "March";
+$month_name[1]  = "Januari";
+$month_name[2]  = "Februari";
+$month_name[3]  = "Maart";
 $month_name[4]  = "April";
-$month_name[5]  = "May";
-$month_name[6]  = "June";
-$month_name[7]  = "July";
-$month_name[8]  = "August";
+$month_name[5]  = "Mei";
+$month_name[6]  = "Juni";
+$month_name[7]  = "Juli";
+$month_name[8]  = "Augustus";
 $month_name[9]  = "September";
-$month_name[10] = "October";
+$month_name[10] = "Oktober";
 $month_name[11] = "November";
 $month_name[12] = "December";
 
 // Other text
-$EVTEXT['TODAY'] = 'Today';
-$EVTEXT['TODAYEVENTS'] = 'Today\'s Events';
-$EVTEXT['EVENT'] = 'Event';
-$EVTEXT['INFO'] = 'Info:';
-$EVTEXT['YEAR'] = 'Year';
-$EVTEXT['MONTH'] = 'Month';
-$EVTEXT['DAY'] = 'Day';
-$EVTEXT['ENTEREVENT'] = 'Enter Event';
-$EVTEXT['ENTERLINK'] = 'Enter Link';
-$EVTEXT['COPYDAYS'] = 'Days event last';
-$EVTEXT['COLOR'] = 'Color';
-$EVTEXT['NOEVENT'] = 'Cabin free';
-$EVTEXT['EVENT_TYPE_1'] = 'bezet';
-$EVTEXT['EVENT_TYPE_2'] = 'vrij';
-$EVTEXT['EVENT_TYPE_3'] = 'wisseldag';
-$EVTEXT['EVENT_TYPE_4'] = 'optie';
-$EVTEXT['EVENT_TYPE_5'] = 'commercieel verhuur';
+$EVTEXT['TODAY'] = 'Vandaag';
+$EVTEXT['TODAYEVENTS'] = 'Status vandaag:';
+$EVTEXT['EVENT'] = 'Omschrijving';
+$EVTEXT['INFO'] = 'Status';
+$EVTEXT['YEAR'] = 'Jaar';
+$EVTEXT['MONTH'] = 'Maand';
+$EVTEXT['DAY'] = 'Dag';
+$EVTEXT['ENTEREVENT'] = 'Toevoegen verhuur';
+$EVTEXT['ENTERLINK'] = 'Toevoegen link';
+$EVTEXT['COPYDAYS'] = 'Duur van de verhuur';
+$EVTEXT['COLOR'] = 'Kleur';
+$EVTEXT['NOEVENT'] = 'Beschikbaar';
+$EVTEXT['EVENT_TYPE_1'] = 'Verhuurd';
+$EVTEXT['EVENT_TYPE_2'] = 'Beschikbaar';
+$EVTEXT['EVENT_TYPE_3'] = 'Wisseldag';
+$EVTEXT['EVENT_TYPE_4'] = 'Optie tot huur';
+$EVTEXT['EVENT_TYPE_5'] = 'Overig';
 
 

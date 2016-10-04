@@ -29,7 +29,7 @@ $update_when_modified = true; // Tells script to update when this page was last 
 require(WB_PATH.'/modules/admin.php');
 
 // This code removes any <?php tags
-$evheader = $admin->get_post('evl_header');
+$title = $admin->get_post('evl_header');
 $event_msg = $admin->get_post('evl_event_msg');
 $noevents_msg = $admin->get_post('evl_noevents_msg');
 $default_url = $admin->get_post('default_url');
@@ -41,7 +41,7 @@ $header = addslashes(str_replace('?php', '', $admin->get_post('header')));
 $footer = addslashes(str_replace('?php', '', $admin->get_post('footer')));
 
 
-$database->query("UPDATE ".TABLE_PREFIX."mod_cabin_settings SET page_id = '$page_id', evheader = '$evheader', event_msg = '$event_msg', noevents_msg = '$noevents_msg', default_url = '$default_url', todayevent = '$todayevent', showalldata = '$showalldata', date_view = '$date_view' WHERE section_id = '$section_id'");
+$database->query("UPDATE ".TABLE_PREFIX."mod_cabin_settings SET page_id = '$page_id', title = '$title', event_msg = '$event_msg', noevents_msg = '$noevents_msg', default_url = '$default_url', todayevent = '$todayevent', showalldata = '$showalldata', date_view = '$date_view' WHERE section_id = '$section_id'");
 
 
 // Check if there is a database error, otherwise say successful

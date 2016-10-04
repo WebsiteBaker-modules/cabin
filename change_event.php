@@ -44,8 +44,8 @@ $query_content = $database->query("SELECT * FROM ".TABLE_PREFIX."mod_cabin_dates
 $fetch_content = $query_content->fetchRow();
 
 ?>
-<a class="link" href="<?php echo ADMIN_URL; ?>/pages/modify.php?page_id=<?php echo $page_id; ?>"><?php echo $TEXT['SETTINGS']; ?></A> | 
-<a class="link" href="<?php echo WB_URL; ?>/modules/cabin/modify_event.php?page_id=<?php echo $page_id; ?>&section_id=<?php echo $section_id; ?>"><?php echo $TEXT['MODIFY'].'/'.$TEXT['DELETE'].' Event'; ?></A><BR>
+<a class="link" href="<?php echo ADMIN_URL; ?>/pages/modify.php?page_id=<?php echo $page_id; ?>"><?php echo $TEXT['SETTINGS']; ?></a> | 
+<a class="link" href="<?php echo WB_URL; ?>/modules/cabin/modify_event.php?page_id=<?php echo $page_id; ?>&section_id=<?php echo $section_id; ?>"><?php echo $TEXT['MODIFY'].'/'.$TEXT['DELETE'].' Event'; ?></a><br />
 <form name="modify" action="<?php echo WB_URL; ?>/modules/cabin/save_event.php" method="post" style="margin: 0;">
 <input type="hidden" name="section_id" value="<?php echo $section_id; ?>">
 <input type="hidden" name="page_id" value="<?php echo $page_id; ?>">
@@ -198,28 +198,32 @@ SelectDay($day,$EVTEXT['DAY']);
 SelectMonth($month,$EVTEXT['MONTH']);
 SelectYear(5,$year,$EVTEXT['YEAR']);
 CopyDays(21,$EVTEXT['COPYDAYS']);
-echo "<br><br>";
+echo "<br /><br />";
 Color(5,$name_link,$EVTEXT['COLOR']);
 } else { 
 SelectYear($year_interval,$year,$EVTEXT['YEAR']);
 SelectMonth($month,$EVTEXT['MONTH']);
 SelectDay($day,$EVTEXT['DAY']);
 CopyDays(21,$EVTEXT['COPYDAYS']);
-echo "<br><br>";
+echo "<br /><br />";
 Color(5,$name_link,$EVTEXT['COLOR']);
 }
 
-?>
-<font size="1" face="Arial">1 <?php echo $EVTEXT['EVENT_TYPE_1']; ?></font>
-<font size="1" face="Arial" color="#CC0000">&#9608;&#9608; </font>
-<font size="1" face="Arial">2 <?php echo $EVTEXT['EVENT_TYPE_2']; ?></font>
-<font size="1" face="Arial" color="#00CC00">&#9608;&#9608;</font>
-<font size="1" face="Arial">3 <?php echo $EVTEXT['EVENT_TYPE_3']; ?></font>
-<font size="1" face="Arial" color="#FF6600">&#9608;&#9608;</font>
-<font size="1" face="Arial">4 <?php echo $EVTEXT['EVENT_TYPE_4']; ?></font>
-<font size="1" face="Arial" color="#0000FF">&#9608;&#9608;</font>
-<font size="1" face="Arial">5 <?php echo $EVTEXT['EVENT_TYPE_5']; ?></font>
-<font size="1" face="Arial" color="#FFFF66">&#9608;&#9608;</font>
+?><br />
+<font size="1" face="Tahoma" color="#CC0000">&#9608;&#9608;</font> <font size="1" face="Tahoma">1 <?php echo $EVTEXT['EVENT_TYPE_1']; ?></font>
+<br />
+
+<font size="1" face="Tahoma" color="#2A520B">&#9608;&#9608;</font> <font size="1" face="Tahoma">2 <?php echo $EVTEXT['EVENT_TYPE_2']; ?></font>
+<br />
+
+<font size="1" face="Tahoma" color="#FF7401">&#9608;&#9608;</font> <font size="1" face="Tahoma">3 <?php echo $EVTEXT['EVENT_TYPE_3']; ?></font>
+<br />
+
+<font size="1" face="Tahoma" color="#0000FF">&#9608;&#9608;</font> <font size="1" face="Tahoma">4 <?php echo $EVTEXT['EVENT_TYPE_4']; ?></font>
+<br />
+
+<font size="1" face="Tahoma" color="#FFC501">&#9608;&#9608;</font> <font size="1" face="Tahoma">5 <?php echo $EVTEXT['EVENT_TYPE_5']; ?></font>
+
               </div>
          </td>
        </tr>

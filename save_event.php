@@ -68,7 +68,7 @@ if ($copydays > 1){
     $theday = mktime (0,0,0,$month ,$day+$i ,$year);
     $option=date("D M j, Y",$theday);
     $value=date("Y-m-d",$theday);
-//  echo "$i $page_id $section_id $value $event_desc $evweb_url $name_link<BR>"; 
+//  echo "$i $page_id $section_id $value $event_desc $evweb_url $name_link<br />"; 
     $database->query("INSERT INTO ".TABLE_PREFIX."mod_cabin_dates (page_id,section_id,date,event_desc,evweb_url,name_link) VALUES ('$page_id','$section_id','$value','$event_desc','$evweb_url','$color')");
     $i++; 
   }

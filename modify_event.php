@@ -38,8 +38,8 @@ $date_view = $fetch_page_content['date_view'];
 </HEAD>
 <BODY>
 
-<a class="link" href="<?php echo ADMIN_URL; ?>/pages/modify.php?page_id=<?php echo $page_id; ?>"><?php echo $TEXT['SETTINGS']; ?></A> | 
-<a class="link" href="<?php echo WB_URL; ?>/modules/cabin/add_event.php?page_id=<?php echo $page_id; ?>&section_id=<?php echo $section_id; ?>"><?php echo $TEXT['ADD'].' Event'; ?> </A><BR>
+<a class="link" href="<?php echo ADMIN_URL; ?>/pages/modify.php?page_id=<?php echo $page_id; ?>"><?php echo $TEXT['SETTINGS']; ?></a> | 
+<a class="link" href="<?php echo WB_URL; ?>/modules/cabin/add_event.php?page_id=<?php echo $page_id; ?>&section_id=<?php echo $section_id; ?>"><?php echo $TEXT['ADD'].' Event'; ?> </a><br />
 
 <table class="evtdborder" border=0 cellspacing=0 cellpadding=2 >
       <?php

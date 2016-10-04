@@ -1,107 +1,89 @@
-font, a {font-family : Verdana, Arial, Helvetica, sans-serif; }
-
-.link        { font-size : 11px; color : #000000 }
-a.link        { text-decoration: none; color : #006699;  }
-a.link:hover{ text-decoration: underline; color : #DD6900; }
-
-.evtdborder {
-      border :  #c0c0c0;
-      border-style : solid; 
-      border-top-width : 1px; 
-      border-right-width : 1px; 
-      border-bottom-width : 1px; 
-      border-left-width : 1px;  
+.link {
+	color: #000000;
 }
-
-.evtdtoday {
-      font-family : Verdana, Arial, Helvetica, sans-serif;
-      background-color : #f0f0f0; 
-      font-weight : bold;
-      font-size : 11px; 
-      line-height : 20px; 
-      color : #000000; 
-      vertical-align : middle; 
-      text-align : left; 
-} 
-
-.evtdheading {
-      font-family : Verdana, Arial, Helvetica, sans-serif;
-      font-weight : bold; 
-      font-size : 10px; 
-      line-height : 20px; 
-      color : #606060; 
-      vertical-align : middle; 
-      text-align : center; 
-      letter-spacing : 0.2em; 
+a.link	{
+	text-decoration: none;
+	color: #006699;
 }
-
-.evTodayDis {
-      vertical-align : middle; 
-      text-align : center; 
-      font-family : Verdana, Arial, Helvetica, sans-serif;
-      font-weight : bold; 
-      font-size : 10px; 
-      line-height : 20px; 
-      color : #606060; 
-      letter-spacing : 0.2em; 
+a.link:hover {
+	text-decoration: none;
+	color: #dd6900;
 }
-
-.evtdeventheading {
-      font-family : Verdana, Arial, Helvetica, sans-serif;
-      font-weight : bold;
-      background-color : #c0c0c0;
-      font-size : 10px; 
-      line-height : 20px; 
-      color : #ffffff;
-      vertical-align : middle; 
-      text-align : center; 
-      letter-spacing : 0.2em; 
+.title  {
+    font-weight: bold; line-height: 18px;
+    color: #000000;
+    vertical-align: middle; 
+    text-align: center;
+	padding: 2px 5px;
 }
-
-.evtddate {
-      font-family : Verdana, Arial, Helvetica, sans-serif;
-      font-weight : normal;
-      font-size : 11px; 
-      line-height : 16px; 
-      color : #606060; 
-      vertical-align : middle; 
-      text-align : left; 
+.heading {     
+    font-weight: bold; 
+    line-height: 20px; 
+    color: #606060; 
+    vertical-align: middle; 
+    text-align: center; 
+	text-transform: uppercase;
 }
-
-.evevent  {
-      font-family : Verdana, Arial, Helvetica, sans-serif;
-      font-weight : normal;
-      font-size : 10px;
-      line-height : 18px;
-      color : #0000ff;
-      vertical-align : middle; 
-      text-align : left;
-      padding-top : 2px;
-      padding-bottom : 2px;
-      padding-right : 5px;
-      padding-left : 5px;
+.head {
+    background-color: #eee;
+    color: #666;
+    vertical-align: middle; 
+	display: flex;
+	text-transform: uppercase;
+	padding: 10px 5px;
 }
-
-.evgenfont {
-      font-family : Verdana, Arial, Helvetica, sans-serif;
-      font-weight : normal;
-      font-size : 12px;
-      line-height : 16px; 
-      color : #606060; 
-      vertical-align : middle; 
-      text-align : center;
+.event-head {
+	width: 50%;
+	text-align: left;
 }
-
-.evheader  {
-      font-family : Verdana, Arial, Helvetica, sans-serif;
-      font-weight : bold; line-height : 18px;
-      font-size : 12px;
-      color : #000000;
-      vertical-align : middle; 
-      text-align : center;
-      padding-top : 2px;
-      padding-bottom : 2px;
-      padding-right : 5px;
-      padding-left : 5px;
+.border {
+	border: 1px solid #ddd;
+    background: #ffffff 
 }
-
+.status-free {
+	color: #2A520B;
+}
+.status-rent  {
+    color: red;
+}
+.status-free, .status-rent {
+    font-weight: bold;
+    vertical-align: middle; 
+    text-align: left;
+}
+.date {
+    color: #666;
+	display: flex;
+	margin: 2px 0;
+	border: 1px solid #ccc;
+}
+.date-info {
+	width:40%;
+	text-align:left;
+	padding:0 5px;	
+}
+.event-info {
+	width: 50%;
+	text-align:left;
+}
+.info-info {
+	width: 10%;
+}
+.date-info, .event-info, .info-info, .event-head {
+	display: inline-block;
+}
+.free {
+	background:#2A520B;
+}
+.rent {
+	background: #EEF5EB;
+}
+.today-free, .today-rent {
+	background: #FCEAAB;
+}
+@media (max-width: 767px) {
+	.info-head {
+		display:none;
+		visibility:hidden;
+	}
+}

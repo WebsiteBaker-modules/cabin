@@ -1,5 +1,10 @@
 <?php
 
+/* Version 1.2.3 2016/10/04
+ + Get rid of all the ancient tables and replaced them with div
+ + Cleaned up the frontend; view.php and frontend.css and some small adjustments on other files
+ + Now responsive
+
 /* Version 1.2.2 2013/08/05
  ! Several fixes to make module work with wb 283
 
@@ -50,7 +55,7 @@
 $module_directory = 'cabin';
 $module_name = 'cabin rental Calendar';
 $module_type = 'page';
-$module_version = '1.2.2';
+$module_version = '1.2.3';
 $module_designed_for = '2.8';
 $module_author = 'Bennie Wijs';
 $module_description = 'This module is a cabin rental calendar';

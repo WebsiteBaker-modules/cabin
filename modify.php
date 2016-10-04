@@ -43,7 +43,7 @@ $fetch_page_content = $query_page_content->fetchRow();
   <tr>
       <td width="50%" valign="top">
 			<?php
-			$evheader = stripslashes($fetch_page_content['evheader']);
+			$title = stripslashes($fetch_page_content['title']);
 
  			$event_msg = stripslashes($fetch_page_content['event_msg']);
 			if ($event_msg == '') { $event_msg = 'Nothing for today.'; };
@@ -54,7 +54,7 @@ $fetch_page_content = $query_page_content->fetchRow();
 			$default_url = stripslashes($fetch_page_content['default_url']);
 			?>
 			Give header name<br />
-			<input name="evl_header" type="text" value="<?php echo $evheader; ?>" style="width: 300px;">
+			<input name="evl_header" type="text" value="<?php echo $title; ?>" style="width: 300px;">
 			<br />
 			Give Line if today no event<br />
 			<input name="evl_event_msg" type="text" value="<?php echo $event_msg; ?>" style="width: 300px;">
@@ -92,7 +92,7 @@ $fetch_page_content = $query_page_content->fetchRow();
 	<td width="150"><?php echo $TEXT['DATE_FORMAT'] ?></td>
 	<td>
 		<input type="radio" name="evl_dateview" id="evl_dateview0" value="0" <?php if($fetch_page_content['date_view'] != "1") { echo "checked"; } ?>>
-		<font onclick="document.getElementById('evl_dateview0').checked = true; return false;" style="cursor: default;">Year-Month-Day</font><BR>
+		<font onclick="document.getElementById('evl_dateview0').checked = true; return false;" style="cursor: default;">Year-Month-Day</font><br />
 
 		<input type="radio" name="evl_dateview" id="evl_dateview1" value="1" <?php if($fetch_page_content['date_view'] == "1") { echo "checked"; } ?>>
 		<font onclick="document.getElementById('evl_dateview1').checked = true; return false;" style="cursor: default;">Day-Month-Year</font>
@@ -105,7 +105,7 @@ $fetch_page_content = $query_page_content->fetchRow();
   </tr>
 </table>
 
-<BR>
+<br />
 <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top: 5px;">
 <tr>
 	<td align="left">
@@ -122,7 +122,7 @@ $fetch_page_content = $query_page_content->fetchRow();
 
 <p style="text-align: justify;">
 <center>
-<a class="link" href="<?php echo WB_URL; ?>/modules/cabin/modify_event.php?page_id=<?php echo $page_id; ?>&section_id=<?php echo $section_id; ?>"><?php echo $TEXT['MODIFY'].'/'.$TEXT['DELETE'].' Event'; ?></A><BR>
-<a class="link" href="<?php echo WB_URL; ?>/modules/cabin/add_event.php?page_id=<?php echo $page_id; ?>&section_id=<?php echo $section_id; ?>"><?php echo $TEXT['ADD'].' Event'; ?> </A><BR>
+<a class="link" href="<?php echo WB_URL; ?>/modules/cabin/modify_event.php?page_id=<?php echo $page_id; ?>&section_id=<?php echo $section_id; ?>"><?php echo $TEXT['MODIFY'].'/'.$TEXT['DELETE'].' Event'; ?></a><br />
+<a class="link" href="<?php echo WB_URL; ?>/modules/cabin/add_event.php?page_id=<?php echo $page_id; ?>&section_id=<?php echo $section_id; ?>"><?php echo $TEXT['ADD'].' Event'; ?> </a><br />
 </center>
 </P>

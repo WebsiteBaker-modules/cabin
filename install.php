@@ -30,7 +30,7 @@ if(defined('WB_URL')) {
   $mod_cabin = 'CREATE TABLE `'.TABLE_PREFIX.'mod_cabin_settings` ('
 				. ' `page_id` INT NOT NULL,'
 				. ' `section_id` INT NOT NULL,'
-				. ' `evheader` VARCHAR(128) NOT NULL,'
+				. ' `title` VARCHAR(128) NOT NULL,'
 				. ' `event_msg` VARCHAR(128) NOT NULL,'
 				. ' `noevents_msg` VARCHAR(128) NOT NULL,'
 				. ' `default_url` VARCHAR(128) NOT NULL,'
